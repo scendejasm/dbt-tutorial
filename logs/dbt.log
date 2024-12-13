@@ -1,0 +1,486 @@
+[0m14:53:05.048858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C03D99940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C01FA8550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C04A06210>]}
+
+
+============================== 14:53:05.056964 | 30e2dc7a-a10c-49fc-89b5-c0ebec64e2ea ==============================
+[0m14:53:05.056964 [info ] [MainThread]: Running with dbt=1.9.0
+[0m14:53:05.057774 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\i6759\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init jaffle_shop', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:53:05.069921 [debug] [MainThread]: Starter project path: C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\include\starter_project
+[0m14:53:05.080421 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:53:05.081901 [info ] [MainThread]: Setting up your profile.
+[0m14:53:05.084355 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m14:53:05.085514 [debug] [MainThread]: Command `dbt init` failed at 14:53:05.085348 after 0.27 seconds
+[0m14:53:05.085938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C04F80D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C04F6D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C04E25E10>]}
+[0m14:53:05.086398 [debug] [MainThread]: Flushing usage events
+[0m14:53:05.429483 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:16:12.439828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001477F7292B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001477D8A0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014700439D10>]}
+
+
+============================== 16:16:12.445131 | 8af501c7-bc4b-49fc-b87e-b4e86a1f6149 ==============================
+[0m16:16:12.445131 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:16:12.446484 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\i6759\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:16:12.466911 [info ] [MainThread]: dbt version: 1.9.0
+[0m16:16:12.467435 [info ] [MainThread]: python version: 3.13.0
+[0m16:16:12.467855 [info ] [MainThread]: python path: C:\Users\i6759\Projects\dbt-tutorial\.venv\Scripts\python.exe
+[0m16:16:12.468203 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:16:12.490987 [error] [MainThread]: Encountered an error:
+DLL load failed while importing _psycopg: The specified module could not be found.
+[0m16:16:12.497669 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ~~~~~~~~~~~~~~^
+        renderer,
+        ^^^^^^^^^
+    ...<5 lines>...
+        getattr(self.args, "threads", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        raw_profiles=raw_profiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        raw_profile=raw_profile,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        profile_data, profile_name, target_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\__init__.py", line 4, in <module>
+    from dbt.adapters.postgres.connections import PostgresConnectionManager, PostgresCredentials
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\connections.py", line 15, in <module>
+    import psycopg2
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\psycopg2\__init__.py", line 51, in <module>
+    from psycopg2._psycopg import (                     # noqa
+    ...<10 lines>...
+    )
+ImportError: DLL load failed while importing _psycopg: The specified module could not be found.
+
+[0m16:16:12.499289 [debug] [MainThread]: Command `dbt debug` failed at 16:16:12.499155 after 0.17 seconds
+[0m16:16:12.499625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001470091F5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014700996D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000147009D1040>]}
+[0m16:16:12.499971 [debug] [MainThread]: Flushing usage events
+[0m16:16:12.837464 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:51.123020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E44CC92B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E42E40410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E458F9D10>]}
+
+
+============================== 16:23:51.126446 | daa50281-9c1f-4225-b3f4-7a90f23ed546 ==============================
+[0m16:23:51.126446 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:23:51.127255 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\i6759\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:51.140511 [info ] [MainThread]: dbt version: 1.9.0
+[0m16:23:51.141088 [info ] [MainThread]: python version: 3.13.0
+[0m16:23:51.141686 [info ] [MainThread]: python path: C:\Users\i6759\Projects\dbt-tutorial\.venv\Scripts\python.exe
+[0m16:23:51.142150 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:23:51.164024 [error] [MainThread]: Encountered an error:
+DLL load failed while importing _psycopg: The specified module could not be found.
+[0m16:23:51.168495 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ~~~~~~~~~~~~~~^
+        renderer,
+        ^^^^^^^^^
+    ...<5 lines>...
+        getattr(self.args, "threads", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        raw_profiles=raw_profiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        raw_profile=raw_profile,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        profile_data, profile_name, target_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\__init__.py", line 4, in <module>
+    from dbt.adapters.postgres.connections import PostgresConnectionManager, PostgresCredentials
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\connections.py", line 15, in <module>
+    import psycopg2
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\psycopg2\__init__.py", line 51, in <module>
+    from psycopg2._psycopg import (                     # noqa
+    ...<10 lines>...
+    )
+ImportError: DLL load failed while importing _psycopg: The specified module could not be found.
+
+[0m16:23:51.170280 [debug] [MainThread]: Command `dbt debug` failed at 16:23:51.170155 after 0.16 seconds
+[0m16:23:51.170617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E45DDF5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E45E5ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E45E91040>]}
+[0m16:23:51.171005 [debug] [MainThread]: Flushing usage events
+[0m16:23:51.518743 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:24:43.495913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180FFF212B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180FF070410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018081BE9D10>]}
+
+
+============================== 16:24:43.499424 | f70a51b0-96b1-4cf6-9b7c-f74a64f36f5b ==============================
+[0m16:24:43.499424 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:24:43.500121 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\i6759\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:24:43.512182 [info ] [MainThread]: dbt version: 1.9.0
+[0m16:24:43.512928 [info ] [MainThread]: python version: 3.13.0
+[0m16:24:43.513509 [info ] [MainThread]: python path: C:\Users\i6759\Projects\dbt-tutorial\.venv\Scripts\python.exe
+[0m16:24:43.514073 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:24:43.534055 [error] [MainThread]: Encountered an error:
+DLL load failed while importing _psycopg: The specified module could not be found.
+[0m16:24:43.538456 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ~~~~~~~~~~~~~~^
+        renderer,
+        ^^^^^^^^^
+    ...<5 lines>...
+        getattr(self.args, "threads", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        raw_profiles=raw_profiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        raw_profile=raw_profile,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        profile_data, profile_name, target_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\__init__.py", line 4, in <module>
+    from dbt.adapters.postgres.connections import PostgresConnectionManager, PostgresCredentials
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\connections.py", line 15, in <module>
+    import psycopg2
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\psycopg2\__init__.py", line 51, in <module>
+    from psycopg2._psycopg import (                     # noqa
+    ...<10 lines>...
+    )
+ImportError: DLL load failed while importing _psycopg: The specified module could not be found.
+
+[0m16:24:43.540225 [debug] [MainThread]: Command `dbt debug` failed at 16:24:43.540088 after 0.16 seconds
+[0m16:24:43.540715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180820CF5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001808214ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018082181040>]}
+[0m16:24:43.541254 [debug] [MainThread]: Flushing usage events
+[0m16:24:43.857557 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:30.306896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002590E6E52B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002590C860410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002590F329D10>]}
+
+
+============================== 16:25:30.310284 | fcff9395-4c50-4139-9c5d-c22b70919719 ==============================
+[0m16:25:30.310284 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:25:30.310925 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\i6759\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:25:30.322520 [info ] [MainThread]: dbt version: 1.9.0
+[0m16:25:30.323175 [info ] [MainThread]: python version: 3.13.0
+[0m16:25:30.323635 [info ] [MainThread]: python path: C:\Users\i6759\Projects\dbt-tutorial\.venv\Scripts\python.exe
+[0m16:25:30.324229 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:25:30.340589 [error] [MainThread]: Encountered an error:
+DLL load failed while importing _psycopg: The specified module could not be found.
+[0m16:25:30.345022 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ~~~~~~~~~~~~~~^
+        renderer,
+        ^^^^^^^^^
+    ...<5 lines>...
+        getattr(self.args, "threads", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        raw_profiles=raw_profiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        raw_profile=raw_profile,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        profile_data, profile_name, target_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\__init__.py", line 4, in <module>
+    from dbt.adapters.postgres.connections import PostgresConnectionManager, PostgresCredentials
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\connections.py", line 15, in <module>
+    import psycopg2
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\psycopg2\__init__.py", line 51, in <module>
+    from psycopg2._psycopg import (                     # noqa
+    ...<10 lines>...
+    )
+ImportError: DLL load failed while importing _psycopg: The specified module could not be found.
+
+[0m16:25:30.346982 [debug] [MainThread]: Command `dbt debug` failed at 16:25:30.346823 after 0.15 seconds
+[0m16:25:30.347337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002590F80F5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002590F886D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002590F8C5040>]}
+[0m16:25:30.347720 [debug] [MainThread]: Flushing usage events
+[0m16:25:30.677240 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:59.728414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213418E52B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133FA60410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021342519D10>]}
+
+
+============================== 16:25:59.732056 | 00db9ac5-3967-4636-837e-fb623731717e ==============================
+[0m16:25:59.732056 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:25:59.732768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\i6759\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:25:59.744106 [info ] [MainThread]: dbt version: 1.9.0
+[0m16:25:59.744644 [info ] [MainThread]: python version: 3.13.0
+[0m16:25:59.745058 [info ] [MainThread]: python path: C:\Users\i6759\Projects\dbt-tutorial\.venv\Scripts\python.exe
+[0m16:25:59.745461 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:25:59.762695 [error] [MainThread]: Encountered an error:
+DLL load failed while importing _psycopg: The specified module could not be found.
+[0m16:25:59.767333 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ~~~~~~~~~~~~~~^
+        renderer,
+        ^^^^^^^^^
+    ...<5 lines>...
+        getattr(self.args, "threads", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        raw_profiles=raw_profiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        raw_profile=raw_profile,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        profile_data, profile_name, target_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\__init__.py", line 4, in <module>
+    from dbt.adapters.postgres.connections import PostgresConnectionManager, PostgresCredentials
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\dbt\adapters\postgres\connections.py", line 15, in <module>
+    import psycopg2
+  File "C:\Users\i6759\Projects\dbt-tutorial\.venv\Lib\site-packages\psycopg2\__init__.py", line 51, in <module>
+    from psycopg2._psycopg import (                     # noqa
+    ...<10 lines>...
+    )
+ImportError: DLL load failed while importing _psycopg: The specified module could not be found.
+
+[0m16:25:59.768910 [debug] [MainThread]: Command `dbt debug` failed at 16:25:59.768787 after 0.15 seconds
+[0m16:25:59.769248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213429FF5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021342A7AD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021342AB5040>]}
+[0m16:25:59.769569 [debug] [MainThread]: Flushing usage events
+[0m16:26:00.087697 [debug] [MainThread]: An error was encountered while trying to flush usage events
